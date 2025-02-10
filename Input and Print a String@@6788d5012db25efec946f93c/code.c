@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int num;
+    x[]= num;
     scanf("%s",&num);
     printf("You entered: %s",num);
 }
