@@ -8,7 +8,7 @@ int main() {
     int a,b;
     scanf("%d %d",&a,&b);
     if (a && b == -5){
-        printf("False")
+        printf("False");
     } 
     else{
         a || b > 0 ? printf("True") : printf("False");
