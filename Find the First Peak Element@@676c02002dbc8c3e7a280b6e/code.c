@@ -8,21 +8,18 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(int i = 0 ; i < n ; i++){
-        if(i == 0){
-            if(arr[0] > arr[1]){
-                printf("%d",arr[0]);
-                break;
-            }
-        else if(i != 0){
+        int flag = 0;
+        if(i != 0){
             if((arr[i] > arr[i-1]) && (arr[i] > arr[i+1])){
                 printf("%d",arr[i]);
+                flag = 1;
                 break;
             }
         }
-        else{
+        if(!flag){
             printf("-1");
-            break;
-        }
-        }
+        } 
+        
+    }
     }
 }
