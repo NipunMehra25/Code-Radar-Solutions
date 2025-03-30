@@ -15,7 +15,7 @@ int main(){
         printf("\n");
     }
     for(int p = 0 ; p < n ; p++){
-        for(int k = 0 ; k <p+1 ; k++){
+        for(int k = 0 ; k <p ; k++){
             printf(" ");
         }
         for(int j = 0 ; j < n-p ; j++){
@@ -24,5 +24,6 @@ int main(){
         for(int l = 0; l < n-p-1; l++){
             printf("*");
         }
+        printf("\n");
     }
 }
