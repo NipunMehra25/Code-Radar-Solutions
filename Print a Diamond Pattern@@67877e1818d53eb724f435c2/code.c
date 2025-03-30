@@ -2,7 +2,7 @@
 int main(){
     int n ;
     scanf("%d",&n);
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < n-1; i++){
         for(int k = 0 ; k < n-i-1 ; k++){
             printf(" ");
         }
@@ -15,7 +15,7 @@ int main(){
         printf("\n");
     }
     for(int p = 0 ; p < n ; p++){
-        for(int k = 0 ; k <p ; k++){
+        for(int k = 0 ; k < p ; k++){
             printf(" ");
         }
         for(int j = 0 ; j < n-p ; j++){
