@@ -7,8 +7,8 @@ int main(){
     for(int i = 0 ; i < n ; i++){
         scanf("%d",&arr[i]);
     }
+    int flag = 0;
     for(int i = 0 ; i < n ; i++){
-        int flag = 0;
         if(i != 0){
             if((arr[i] > arr[i-1]) && (arr[i] > arr[i+1])){
                 printf("%d",arr[i]);
@@ -16,10 +16,11 @@ int main(){
                 break;
             }
         }
-        if(!flag){
-            printf("-1");
-        } 
+       
         
     
     }
+    if(!flag){
+        printf("-1");
+    } 
 }
