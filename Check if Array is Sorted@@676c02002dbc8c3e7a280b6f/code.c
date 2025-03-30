@@ -7,7 +7,7 @@ int sort(int arr[] ,int n){
     }
 
     for(int i = 0 ; i < n ;i++){
-        for(int j = 0 ; j < n ; j++){
+        for(int j = 0 ; j < n - i -1 ; j++){
             if(arr[j] > arr[j+1]){
                 int temp = arr[j];
                 arr[j] = arr[j+1];
@@ -16,13 +16,11 @@ int sort(int arr[] ,int n){
         }
     }
     for(int i = 0 ; i < n ; i++){
-        int flag = 1;
-        if(arr[i] != dub[i]){
-            flag = 0
-            break;
+        if(arr[i] != dup[i]){
+            return 0 ;
         }
-        return flag;
     }
+    return 1;
 }
 int main(){
     int n;
